@@ -8,6 +8,18 @@
 <body>
   <h1>Hello World</h1>
   <p>This is a try of github page</p>
+
+  <p>The time now is <span id="time" /></p>
+  <button type="button" onclick="updateTime()">
+    Click me to update Date and Time.
+  </button>
 </body>
+
+<script>
+  function updateTime() {
+    document.getElementById('time').innerHTML = Date();
+  };
+  updateTime();
+</script>
 
 </html>
